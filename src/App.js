@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import HomePage from './comps/HomePage';
+import Navigation from './comps/Navigation';
+import {Route, Routes} from 'react-router-dom';
+import "rsuite/dist/rsuite.min.css";
+import 'rsuite/styles/index.less';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return(
+    <Routes>
+      <Route path="/" element={<>
+        <Navigation />
+        <HomePage />
+      </>}/>
+    </Routes>
+  )
+  
 }
 
 export default App;
