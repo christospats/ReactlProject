@@ -4,6 +4,7 @@ import {Route, Routes} from 'react-router-dom';
 import "rsuite/dist/rsuite.min.css";
 import 'rsuite/styles/index.less';
 import Communication from './comps/Communication';
+import Exercise from './comps/Exercise';
 
 function App() {
   return(
@@ -12,6 +13,7 @@ function App() {
         <Navigation />
         <HomePage />
         <Communication />
+        <Exercise />
       </>}/>
     </Routes>
   )
