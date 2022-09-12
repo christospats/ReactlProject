@@ -5,6 +5,7 @@ import "rsuite/dist/rsuite.min.css";
 import 'rsuite/styles/index.less';
 import Communication from './comps/Communication';
 import Exercise from './comps/Exercise';
+import Biography from './comps/Biography';
 
 function App() {
   return(
@@ -14,6 +15,7 @@ function App() {
         <HomePage />
         <Communication />
         <Exercise />
+        <Biography />
       </>}/>
     </Routes>
   )
