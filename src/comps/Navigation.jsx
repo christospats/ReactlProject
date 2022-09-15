@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, FlexboxGrid } from 'rsuite';
+import { WheelHandler } from 'rsuite/esm/DOMHelper';
 
 const CustomNavbar = ({ onSelect, activeKey, ...props }) => {
   return (
@@ -15,10 +16,10 @@ const CustomNavbar = ({ onSelect, activeKey, ...props }) => {
             </Navbar.Brand>
           </FlexboxGrid.Item>
           <FlexboxGrid.Item>
-            <Nav onSelect={onSelect} activeKey={activeKey} style={{fontFamily:'sans-serif',color:'black'}}>
-              <Nav.Item eventKey="1" >Ασκήσεις</Nav.Item>
-              <Nav.Item eventKey="2">Βιογραφικά</Nav.Item>
-              <Nav.Item eventKey="3">Επικοινωνία</Nav.Item>
+            <Nav onSelect={onSelect} activeKey={activeKey} style={{fontFamily:'sans-serif'}} justified>
+              <Nav.Item eventKey="1" style={{color:'black'}}>Ασκήσεις</Nav.Item>
+              <Nav.Item eventKey="2" style={{color:'black'}}>Βιογραφικά</Nav.Item>
+              <Nav.Item eventKey="3" style={{color:'black'}}>Επικοινωνία</Nav.Item>
             </Nav>
           </FlexboxGrid.Item>
         </FlexboxGrid>
