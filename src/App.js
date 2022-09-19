@@ -13,9 +13,9 @@ function App() {
       <Route path="/" element={<>
         <Navigation />
         <HomePage />
-        <Communication />
         <Exercise />
         <Biography />
+        <Communication />
       </>}/>
     </Routes>
   )
