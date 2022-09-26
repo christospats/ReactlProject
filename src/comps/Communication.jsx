@@ -41,7 +41,7 @@ class Communication extends Component {
         <Container>
           <Header style={{backgroundColor:'white'}}>
             Τηλέφωνο επικοινωνίας:<br />
-            Email:<br />
+            Email: liappistsikrika@gmail.com<br />
             Facebook:<br />
             klpklp<br />
           </Header>
