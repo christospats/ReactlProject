@@ -4,7 +4,7 @@ import { WheelHandler } from 'rsuite/esm/DOMHelper';
 
 const CustomNavbar = ({ onSelect, activeKey, ...props }) => {
   return (
-      <Navbar {...props} style={{backgroundColor:'green',alignItems:'right',position:'fixed', width:'100%'}}>
+      <Navbar {...props} style={{backgroundColor:'green',alignItems:'right',position:'fixed', width:'100%', zIndex:'2'}}>
         <FlexboxGrid justify='space-between'>
           <FlexboxGrid.Item>
             <Navbar.Brand href="/" style={{fontFamily:'sans-serif',color:'black', marginLeft:'-10px'}}>
