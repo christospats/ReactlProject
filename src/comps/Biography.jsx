@@ -5,7 +5,7 @@ import BioData from '../assets/BioData';
 
 function Biography() {
     return ( 
-        <FlexboxGrid justify='space-around' style={{borderStyle:"solid", paddingTop:'10%', paddingBottom:'10%', borderRadius:"25px", backgroundColor:"#FAEBD7"}}>
+        <FlexboxGrid justify='space-around' style={{borderStyle:"solid", paddingBlock: "10%", borderRadius:"25px", backgroundColor:"#FAEBD7", marginLeft: "56px", marginRight: "56px"}}>
             {profData.map((profData) => (
                 <BioData profData={profData} key={profData.name} />
             ))}
