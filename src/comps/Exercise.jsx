@@ -1,8 +1,9 @@
-import React, { PureComponent } from 'react';
-
-function Exercise() {
-    return ( 
-        <h1>Ασκήσεις</h1>
+import React from 'react';
+function Exercise({exerciseRef}) {
+    return (
+        <div ref={exerciseRef}>
+            <h1>Ασκήσεις</h1>
+        </div>
      );
 }
 
