@@ -6,6 +6,9 @@ import Communication from './comps/Communication';
 import Exercise from './comps/Exercise';
 import Biography from './comps/Biography';
 import React, {useRef} from "react";
+import { Route,Routes } from 'react-router-dom';
+import BiographyPage from './pages/BiographyPage';
+import profData from './assets/profData';
 
 
 function App() {
@@ -18,10 +21,17 @@ function App() {
   return(
     <div>
       <Navigation homeRef={homeRef} exerciseRef={exerciseRef} biographyRef={biographyRef} commRef={commRef}/>
-      <HomePage homeRef={homeRef}/>
-      <Exercise exerciseRef={exerciseRef}/>
-      <Biography biographyRef={biographyRef}/>
-      <Communication commRef={commRef}/>
+      <Routes>
+        <Route path="/" element={<>
+          <HomePage homeRef={homeRef}/>
+          <Exercise exerciseRef={exerciseRef}/>
+          <Biography biographyRef={biographyRef}/>
+          <Communication commRef={commRef}/>
+        </>}/>
+        <Route path="/biographypageliappis" element={<BiographyPage/>} />
+        <Route path="/biographypageamalia" element={<BiographyPage/>} />
+      </Routes>
+        
     </div>
   )
   
