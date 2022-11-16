@@ -24,7 +24,7 @@ function App() {
       <Routes>
         <Route path="/" element={<>
           <HomePage homeRef={homeRef}/>
-          <Exercise exerciseRef={exerciseRef}/>
+          {/*<Exercise exerciseRef={exerciseRef}/>*/}
           <Biography biographyRef={biographyRef}/>
           <Communication commRef={commRef}/>
         </>}/>
