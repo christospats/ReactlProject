@@ -11,7 +11,7 @@ function HomePage({homeRef}) {
     return ( 
         <div style={{minHeight:'100vh'}} ref={homeRef}>
             <FlexboxGrid>
-                <Container style={{marginTop:'56px',position:'static',width:'100%',height:'100vh'}}>
+                <Container style={{marginTop:'56px',position:'static',width:'100%',height:'50em'}}>
                     <Carousel autoplay shape="bar" className="custom-slider" style={{position:'absolute',width:"100%", height:"100%"}}>
                         <img src={liappis1} alt="Classrooms" />
                         <img src={liappis2} alt="Classrooms" />
@@ -19,9 +19,9 @@ function HomePage({homeRef}) {
                         <img src={liappis4} alt="Classrooms" />
                         <img src={liappis5} alt="Classrooms" />
                     </Carousel>
-                    <Content 
+                    <Content
                         className='content'
-                        style={{backgroundColor:"white", borderRadius:'25px',zIndex:1,display:"flex",opacity:'90%', flexFlow:'column',alignSelf:'center',marginTop:'145px',position:'absolute'}}
+                        style={{backgroundColor:"white", borderRadius:'25px',zIndex:1,display:"flex",opacity:'90%', flexFlow:'column',alignSelf:'center',marginTop:'5em',position:'absolute'}}
                     >
                         <h3 style={{textAlign:'center',fontFamily:'Halvetica'}}>Το φροντιστήριό μας</h3>
                         <p style={{textAlign:'center',fontSize:'large',fontFamily:'Halvetica'}}>

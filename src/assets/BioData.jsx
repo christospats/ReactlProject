@@ -3,6 +3,7 @@ import { Content, FlexboxGrid, Panel } from 'rsuite';
 import ArrowRightLineIcon from '@rsuite/icons/ArrowRightLine';
 import { Icon } from '@rsuite/icons';
 import { useNavigate } from "react-router-dom";
+import paperText from '../photos/paperText.png';
 
 function BioData({profData}) {
     let navigate = useNavigate();
@@ -18,8 +19,8 @@ function BioData({profData}) {
 
     return (
         <FlexboxGrid.Item>
-            <Panel shaded bordered bodyFill style={{ display: 'inline-block', backgroundColor:"white",borderRadius:"10px" }}>
-                <img src={profData.picUrl} width="250" height="250" />
+            <Panel shaded bordered bodyFill style={{ display: 'inline-block',backgroundImage: `url(${paperText})`, paddingBlock: "11%" , borderRadius:"5px", boxShadow: "15px 10px 50px #001a00"}}>
+                <img src={profData.picUrl} width="250" height="200" />
                 <Panel header={profData.name} style={{textAlign:'center'}}>
                     <p>
                         <small>
