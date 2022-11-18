@@ -20,7 +20,7 @@ function BioData({profData}) {
     return (
         <FlexboxGrid.Item>
             <Panel shaded bordered bodyFill style={{ display: 'inline-block',backgroundImage: `url(${paperText})`, paddingBlock: "11%" , borderRadius:"5px", boxShadow: "15px 10px 50px #001a00"}}>
-                <img src={profData.picUrl} width="350" height="300" />
+                <img src={profData.picUrl} width="250" height="200" />
                 <Panel header={profData.name} style={{textAlign:'center'}}>
                     <p>
                         <small>
