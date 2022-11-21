@@ -5,7 +5,7 @@ import { WheelHandler } from 'rsuite/esm/DOMHelper';
 
 
 
-const CustomNavbar = ({ onSelect, activeKey, homeRef, exerciseRef, biographyRef,commRef, ...props }) => {
+const CustomNavbar = ({ onSelect, activeKey, homeRef, exerciseRef, biographyRef,commRef,infoRef, ...props }) => {
 
   const handleScroll = (ref) => {
     window.scrollTo({
@@ -29,6 +29,7 @@ const CustomNavbar = ({ onSelect, activeKey, homeRef, exerciseRef, biographyRef,
           </FlexboxGrid.Item>
           <FlexboxGrid.Item>
             <Nav onSelect={onSelect} activeKey={activeKey} style={{fontFamily:'sans-serif'}} justified>
+              <Nav.Item href="/#info" onClick={() => {handleScroll(infoRef.current);}} eventKey="4" style={{color:'black'}}>Πληροφορίες</Nav.Item>
               <Nav.Item href="/#exercise" onClick={() => {handleScroll(exerciseRef.current);}} eventKey="1" style={{color:'black'}}>Ασκήσεις</Nav.Item>
               <Nav.Item href="/#biography" onClick={() => {handleScroll(biographyRef.current);}} eventKey="2" style={{color:'black'}}>Βιογραφικά</Nav.Item>
               <Nav.Item href="/#communication" onClick={() => {handleScroll(commRef.current);}} eventKey="3" style={{color:'black'}}>Επικοινωνία</Nav.Item>
@@ -39,11 +40,11 @@ const CustomNavbar = ({ onSelect, activeKey, homeRef, exerciseRef, biographyRef,
   );
 };
 
-function Navigation({homeRef, exerciseRef, biographyRef, commRef}) {
+function Navigation({homeRef, exerciseRef, biographyRef, commRef, infoRef}) {
   const [activeKey, setActiveKey] = React.useState(null);
 
   return (
-    <CustomNavbar appearance="subtle" activeKey={activeKey} onSelect={setActiveKey} homeRef={homeRef} exerciseRef={exerciseRef} biographyRef={biographyRef} commRef={commRef}/>
+    <CustomNavbar appearance="subtle" activeKey={activeKey} onSelect={setActiveKey} homeRef={homeRef} exerciseRef={exerciseRef} biographyRef={biographyRef} commRef={commRef} infoRef={infoRef}/>
   );
 }
 
