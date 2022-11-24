@@ -11,7 +11,7 @@ function HomePage({homeRef}) {
     return ( 
         <div style={{minHeight:'100vh'}} ref={homeRef}>
             <FlexboxGrid>
-                <Container style={{marginTop:'56px',position:'static',width:'100%',height:'50em'}}>
+                <Container style={{marginTop:'56px',position:'static',width:'100%',height:'90vh'}}>
                     <Carousel autoplay shape="bar" className="custom-slider" style={{position:'absolute',width:"100%", height:"100%"}}>
                         <img src={liappis1} alt="Classrooms" />
                         <img src={liappis2} alt="Classrooms" />
