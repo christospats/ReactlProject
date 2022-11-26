@@ -1,8 +1,6 @@
 import React,{useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, FlexboxGrid,Dropdown } from 'rsuite';
-import ResponsiveNav from '@rsuite/responsive-nav';
-import { WheelHandler } from 'rsuite/esm/DOMHelper';
 
 
 
