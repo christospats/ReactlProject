@@ -11,26 +11,30 @@ function InfoPage({schData}) {
     return ( 
         <div>
             {matches && 
-            (<div class='heading' style={{
-                        marginLeft:'15%',
-                        marginRight:'15%',
-                        border:'solid',
-                        borderRadius:"10px",
-                        padding:'2em',
-                        boxShadow: "10px 5px 30px black",
-                        backgroundColor:"#e1eedd"}}>
-                <h3 style={{textAlign:'center'}}>{schData.title}</h3>
-                <Content>{schData.content}</Content>
-            </div>)}
+            (<div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor:'#fefbe9'}}>
+                <div style={{
+                            marginLeft:'15%',
+                            marginRight:'15%',
+                            border:'solid',
+                            borderRadius:"10px",
+                            padding:'2em',
+                            boxShadow: "10px 5px 30px black",
+                            backgroundColor:"#e1eedd",
+                            textAlign:'center'}}>
+                    <h3 style={{textAlign:'center'}}>{schData.title}</h3>
+                    <Content>{schData.content}</Content>
+                </div>    
+             </div>)}
             {!matches &&
-             (<div class='heading' style={{
-                        border:'solid',
-                        padding:'2em',
-                        boxShadow: "10px 5px 30px black",
-                        backgroundColor:"#e1eedd"}}>
+             (<div style={{
+                    border:'solid',
+                    padding:'2em',
+                    boxShadow: "10px 5px 30px black",
+                    backgroundColor:"#e1eedd"}}>
                 <h3 style={{textAlign:'center'}}>{schData.title}</h3>
                 <Content>{schData.content}</Content>
-            </div>)}
+            </div>
+            )}
         </div>
     );
 }
