@@ -27,7 +27,6 @@ function InfoPage({schData}) {
              </div>)}
             {!matches &&
              (<div style={{
-                    border:'solid',
                     padding:'2em',
                     boxShadow: "10px 5px 30px black",
                     backgroundColor:"#e1eedd"}}>
