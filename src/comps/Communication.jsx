@@ -39,18 +39,17 @@ class Communication extends Component {
   render(){
     return (
           <Container ref={this.props.commRef}>
-            <Header style={{backgroundColor:'white'}}>
+            <Header style={{backgroundColor:"#fefbe9", color:'#183a1d',fontWeight:'bold', fontSize:'medium'}}>
               Τηλέφωνο επικοινωνίας:<br />
               Email: liappistsikrika@gmail.com<br />
               Facebook:<br />
-              klpklp<br />
             </Header>
             <Content>
               <Map
                 containerStyle={containerStyle}
                 google = {this.props.google}
                 zoom = {20}
-                style = {{width: "100%",borderStyle: 'solid'}}
+                style = {{width: "100%", boxShadow: "10px 5px 30px black",}}
                 initialCenter = {
                   {
                     lat: 39.362320,
