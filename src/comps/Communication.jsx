@@ -39,22 +39,15 @@ class Communication extends Component {
   render(){
     return (
           <Container ref={this.props.commRef}>
-            <Header style={{backgroundColor:"#fefbe9", color:'#183a1d',fontWeight:'bold', fontSize:'medium',fontFamily:'Brush Script MT'}}>
+            <Header style={{backgroundColor:"#fefbe9", paddingBottom: "15px",display: "flex", justifyContent: "center", color:'#183a1d',fontWeight:'bold', fontSize:'large', fontFamily:'Brush Script MT'}}>
               <br/>
-              <table>
+              <table style={{textAlign: "center"}}>
                 <tbody>
-                  <tr>
-                    <td>Email:</td>
-                    <td> liappistsikrika@gmail.com</td>
-                  </tr>
-                  <tr>
-                    <td>Facebook: </td>
-                    <td><a href="https://www.facebook.com/profile.php?id=100008279084746"> Το facebook μας</a></td>
-                  </tr>
-                  <tr>
-                    <td>Τηλέφωνο<br/> επικοινωνίας: </td>
-                    <td><br/> 2421 400810</td>
-                  </tr>
+                  <tb> Email: liappistsikrika@gmail.com</tb>
+                  <tb> / Τηλέφωνο επικοινωνίας: 2421 400810</tb>
+                  <tb> / </tb>
+                  <a href="https://www.facebook.com/profile.php?id=100008279084746"> Το Facebook μας!</a>
+                  
                 </tbody>
               </table>
               <br/>
