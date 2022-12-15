@@ -1,9 +1,10 @@
 import {Content} from 'rsuite'
-import React,{useEffect, useState} from 'react';
+import React,{useEffect, useState, onChange} from 'react';
 
 function InfoPage({schData}) {
     const [matches, setMatches] = useState(window.matchMedia("(min-width:768px)").matches)
-
+    
+    
     useEffect(() => {
         window.matchMedia("(min-width: 768px)").addEventListener('change', e => setMatches(e.matches));
     }) 
@@ -31,7 +32,10 @@ function InfoPage({schData}) {
                     boxShadow: "10px 5px 30px black",
                     backgroundColor:"#e1eedd"}}>
                 <h3 style={{textAlign:'center'}}>{schData.title}</h3>
-                <Content>{schData.content}</Content>
+                <Content style={{overflow:'scroll',height:"450px", textAlign:'justify'}}>
+                    {schData.content}
+                </Content>
+                    
             </div>
             )}
         </div>
