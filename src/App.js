@@ -26,7 +26,6 @@ function App() {
       <Routes>
         <Route path="/" element={<>
           <HomePage homeRef={homeRef}/>
-          <Info infoRef={infoRef} />
           {/*<Exercise exerciseRef={exerciseRef}/>*/}
           <Biography biographyRef={biographyRef}/>
           <Communication commRef={commRef}/>
