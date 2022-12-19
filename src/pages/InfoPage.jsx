@@ -11,12 +11,12 @@ function InfoPage({schData}) {
     }) 
 
     useEffect(() => {
-        window.matchMedia("(min-width:1084px)").addEventListener('change', e => setMatches(e.matches));
+        window.matchMedia("(min-width:1084px)").addEventListener('change', e => setSmallScreen(e.matches));
     })
 
     return ( 
         <div>
-            {matches && 
+            {matches&&
             (<div style={{textAlign:'justify',padding:'2%',backgroundColor:"#e1eedd",boxShadow: "10px 5px 30px black",}}>
                 <div style={{ fontSize:'large', color:'black',}}>
                     <h3 style={{textAlign:'center'}}>{schData.title}</h3>
@@ -24,20 +24,19 @@ function InfoPage({schData}) {
                     <Content>{schData.content}</Content>    
                 </div>
              </div>)}
-            {!matches&&!smallScreen &&
+            {!matches&&smallScreen&&
              (<div style={{
                     padding:'2em',
                     backgroundColor:"#e1eedd",fontSize:'large', color:'black',}}>
                 <h3 style={{textAlign:'center'}}>{schData.title}</h3>
-                <Content style={{overflow:'scroll',height:'694px', textAlign:'justify'}}>
+                <Content style={{overflow:'scroll',height:'690px', textAlign:'justify'}}>
                     {schData.content}
                 </Content>     
             </div>
             )}
-            {smallScreen&&!matches&&(
+            {!smallScreen&&!matches&&(
                 <div style={{
                     padding:'2em',
-                    boxShadow: "10px 5px 30px black",
                     backgroundColor:"#e1eedd",fontSize:'large', color:'black'}}>
                 <h3 style={{textAlign:'center'}}>{schData.title}</h3>
                 <Content style={{overflow:'scroll',height:"450px", textAlign:'justify'}}>
