@@ -6,7 +6,7 @@ function InfoPage({schData}) {
     
     const [smallScreen,setSmallScreen]= useState(window.matchMedia("(min-width:1084px)").matches)
     
-    const [mediumScreen, setmediumScreen] = useState(window.matchMedia("(min-width:1670px)").matches)
+    const [mediumScreen, setmediumScreen] = useState(window.matchMedia("(min-width:1756px)").matches)
 
     useEffect(() => {
         window.matchMedia("(min-width: 1475px)").addEventListener('change', e => setMatches(e.matches));
@@ -17,7 +17,7 @@ function InfoPage({schData}) {
     })
 
     useEffect(() => {
-        window.matchMedia("(min-width:1645px)").addEventListener('change', e => setmediumScreen(e.matches));
+        window.matchMedia("(min-width:1756px)").addEventListener('change', e => setmediumScreen(e.matches));
     })
 
     return ( 
@@ -35,7 +35,7 @@ function InfoPage({schData}) {
                     padding:'2em',
                     backgroundColor:"#e1eedd",fontSize:'large', color:'black',}}>
                 <h3 style={{textAlign:'center'}}>{schData.title}</h3>
-                <Content style={{overflow:'scroll',height:'694px', textAlign:'justify'}}>
+                <Content style={{overflow:'scroll',height:'690px', textAlign:'justify'}}>
                     {schData.content}
                 </Content>     
             </div>
@@ -56,7 +56,7 @@ function InfoPage({schData}) {
                 <div style={{ fontSize:'large', color:'black',}}>
                     <h3 style={{textAlign:'center'}}>{schData.title}</h3>
                     <br/>
-                    <Content style={{overflow:'scroll',height:'500px', textAlign:'justify'}}>{schData.content}</Content>    
+                    <Content style={{overflow:'scroll',height:'400px', textAlign:'justify'}}>{schData.content}</Content>    
                 </div>
              </div>
             )}
