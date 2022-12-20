@@ -25,8 +25,13 @@ function HomePage({homeRef}, {infoRef}) {
         <div ref={homeRef}>
             {matches&&(
                 <FlexboxGrid>
-                    <Container style={{marginTop:'56px',width:'100%',height:'95vh',display:'flex', flexDirection:'row',justifyContent:'center',alignItems:'center',backgroundColor:'#4C3E0B'}}>
-                        <div style={{width:'40%'}}>
+                    <Container style={{marginTop:'56px',width:'100%',height:'95vh',display:'flex', flexDirection:'row',justifyContent:'center',alignItems:'center',backgroundColor:'#009921'}}>
+                        <div style={{width:'40%', display:'flex', flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+                            <div style={{fontSize:'xx-large', fontFamily:'fantasy',marginTop:'-56px', textShadow:'#f2f2f2 1px 8px 10px'}}>
+                                <Content style={{color:'black'}}>Φροντιστήριο- Γιώργος Λιάππης</Content>
+                            </div>
+                            <br/>
+                            <br/>
                             <Info infoRef={homeRef}/>
                         </div>
                         <Carousel autoplay shape="bar" className="custom-slider" style={{width:"60%", height:"100%"}}>

@@ -25,7 +25,7 @@ const CustomNavbar = ({ onSelect, activeKey, homeRef, exerciseRef, biographyRef,
   
   return (
     <div>
-      {matches && (<Navbar {...props} style={{backgroundColor:'green',alignItems:'right',position:'fixed', width:'100%', zIndex:'2'}}>
+      {matches && (<Navbar {...props} style={{backgroundColor:'#006600',alignItems:'right',position:'fixed', width:'100%', zIndex:'2',boxShadow: "10px 5px 30px black"}}>
         <FlexboxGrid justify='space-between'>
           <FlexboxGrid.Item>
             <Navbar.Brand href="/#homepage" style={{color:'black', marginLeft:'-10px'}} onClick={() => {handleScroll(homeRef.current);}}> 
