@@ -6,7 +6,7 @@ function InfoPage({schData}) {
     
     const [smallScreen,setSmallScreen]= useState(window.matchMedia("(min-width:1084px)").matches)
     
-    const [mediumScreen, setmediumScreen] = useState(window.matchMedia("(min-width:1645px)").matches)
+    const [mediumScreen, setmediumScreen] = useState(window.matchMedia("(min-width:1670px)").matches)
 
     useEffect(() => {
         window.matchMedia("(min-width: 1475px)").addEventListener('change', e => setMatches(e.matches));
