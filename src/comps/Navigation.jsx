@@ -37,7 +37,7 @@ const CustomNavbar = ({ onSelect, activeKey, homeRef, exerciseRef, biographyRef,
             </Navbar.Brand>
           </FlexboxGrid.Item>
           <FlexboxGrid.Item>
-            <Nav onSelect={onSelect} activeKey={activeKey} style={{fontFamily:'Brush Script MT'}} justified>
+            <Nav onSelect={onSelect} activeKey={activeKey} style={{fontFamily:'Times New Roman',fontWeight:'bold'}} justified>
               <Nav.Item href="/#info" onClick={() => {handleScroll(homeRef.current);}} eventKey="4" style={{color:'black'}}>Πληροφορίες</Nav.Item>
               <Nav.Item href="/#biography" onClick={() => {handleScroll(biographyRef.current);}} eventKey="2" style={{color:'black'}}>Βιογραφικά</Nav.Item>
               <Nav.Item href="/#exercise" onClick={() => {handleScroll(exerciseRef.current);}} eventKey="1" style={{color:'black'}}>Ασκήσεις</Nav.Item>
@@ -65,7 +65,7 @@ const CustomNavbar = ({ onSelect, activeKey, homeRef, exerciseRef, biographyRef,
                 <Icon as={MenuIcon} size='md'/>
                 </Button>
               </ButtonToolbar>
-              <Drawer open={open} onClose={() => setOpen(false)} style={{width:'60%', fontFamily:'Brush Script MT'}}>
+              <Drawer open={open} onClose={() => setOpen(false)} style={{width:'60%', fontFamily:'Times New Roman',fontWeight:'bold'}}>
                 <Drawer.Header>
                   <Drawer.Title>Επιλογές</Drawer.Title>
                 </Drawer.Header>

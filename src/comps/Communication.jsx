@@ -39,7 +39,7 @@ class Communication extends Component {
   render(){
     return (
           <Container ref={this.props.commRef}>
-            <Header style={{backgroundColor:"#fefbe9", paddingBottom: "15px",display: "flex", justifyContent: "center", color:'#183a1d',fontWeight:'bold', fontSize:'large', fontFamily:'Times New Roman'}}>
+            <Header style={{background: "linear-gradient(to top right, #166534 17%, #22c55e)",  paddingBottom: "15px",display: "flex", justifyContent: "center", color:'#171717',fontWeight:'bold', fontSize:'large', fontFamily:'Times New Roman'}}>
               <div style={{textAlign: "center"}}>
                 <p>Email: liappistsikrika@gmail.com / Τηλέφωνο επικοινωνίας: 2421 400810 / <a href="https://www.facebook.com/profile.php?id=100008279084746"> Το Facebook μας!</a></p>
               </div>
