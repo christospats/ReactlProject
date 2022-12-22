@@ -12,7 +12,7 @@ function BioData({profData}) {
         if(profData.name === "Γιώργος Λιάππης"){
             navigate("/biographypageliappis");
         }
-        if(profData.name === "Αμαλία Τσικρικα"){
+        if(profData.name === "Αμαλία Τσικρίκα"){
             navigate("/biographypageamalia")
         }
     }
