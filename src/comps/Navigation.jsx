@@ -25,7 +25,7 @@ const CustomNavbar = ({ onSelect, activeKey, homeRef, exerciseRef, biographyRef,
   
   return (
     <div>
-      {matches && (<Navbar {...props} style={{backgroundColor:'#006600',alignItems:'right',position:'fixed', width:'100%', zIndex:'2',boxShadow: "10px 5px 30px black"}}>
+      {matches && (<Navbar {...props} style={{backgroundColor:'#14532d',alignItems:'right',position:'fixed', width:'100%', zIndex:'2',boxShadow: "-20px 5px 50px black"}}>
         <FlexboxGrid justify='space-between'>
           <FlexboxGrid.Item>
             <Navbar.Brand href="/#homepage" style={{color:'black', marginLeft:'-10px'}} onClick={() => {handleScroll(homeRef.current);}}> 
@@ -47,7 +47,7 @@ const CustomNavbar = ({ onSelect, activeKey, homeRef, exerciseRef, biographyRef,
         </FlexboxGrid>
       </Navbar>)}
       {!matches && 
-      (<Navbar {...props} style={{backgroundColor:'green',alignItems:'right',position:'fixed', width:'100%', zIndex:'2'}}>
+      (<Navbar {...props} style={{backgroundColor:'#14532d',alignItems:'right',position:'fixed', width:'100%', zIndex:'2'}}>
         <FlexboxGrid justify='space-between'>
             <FlexboxGrid.Item>
               <Navbar.Brand href="/#homepage" style={{fontFamily:'sans-serif',color:'black', marginLeft:'-10px'}} onClick={() => {handleScroll(homeRef.current);}}> 
@@ -61,7 +61,7 @@ const CustomNavbar = ({ onSelect, activeKey, homeRef, exerciseRef, biographyRef,
 
             <FlexboxGrid.Item style={{paddingTop:'2%'}}>
               <ButtonToolbar>
-                <Button onClick={() => setOpen(true)} style={{backgroundColor:'green', color:'black'}}>
+                <Button onClick={() => setOpen(true)} style={{backgroundColor:'#14532d', color:'black'}}>
                 <Icon as={MenuIcon} size='md'/>
                 </Button>
               </ButtonToolbar>
