@@ -34,7 +34,7 @@ function HomePage({homeRef}, {infoRef}) {
                             <br/>
                             <Info infoRef={homeRef}/>
                         </div>
-                        <Carousel autoplay shape="bar" className="custom-slider" style={{width:"60%", height:"100%"}}>
+                        <Carousel autoplay shape="bar" className="custom-slider" style={{width:"60%", height:"100%",borderBottomLeftRadius:'15px'}}>
                             <img src={liappis1} alt="Classrooms" />
                             <img src={liappis2} alt="Classrooms" />
                             <img src={liappis3} alt="Classrooms" />

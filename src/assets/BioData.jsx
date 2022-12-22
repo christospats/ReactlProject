@@ -12,19 +12,18 @@ function BioData({profData}) {
         if(profData.name === "Γιώργος Λιάππης"){
             navigate("/biographypageliappis");
         }
-        if(profData.name === "Αμαλία Τσικρικα"){
+        if(profData.name === "Αμαλία Τσικρίκα"){
             navigate("/biographypageamalia")
         }
     }
 
     return (
         <FlexboxGrid.Item>
-            <Panel shaded bodyFill style={{backgroundColor:'#183a1d',
+            <Panel shaded bodyFill style={{backgroundColor:'#dcfce7',
                                             display: 'inline-block',
                                             borderRadius:"5px",
                                             boxShadow: "15px 10px 50px #001a00",
-                                            color:'#d9d9d9',
-                                            border:'solid'}}>
+                                            color:'black'}}>
                 <img src={profData.picUrl} width="250" height="250" />
                 <Panel style={{textAlign:'center'}}>
                     <p style={{fontSize:'large', fontWeight:'bold'}}>{profData.name}</p>
@@ -34,8 +33,11 @@ function BioData({profData}) {
                         </small>
                     </p>
                 </Panel>
-                <Content style={{textAlign:"center", borderTop:'inset'}} onClick={handleClick}>
-                    <Icon as={ArrowRightLineIcon} style={{height:"3em", width:"3em"}}/>
+                <Content style={{textAlign:"center", borderTop:'inset',height:"3em"}} onClick={handleClick}>
+                    <Content style={{fontWeight:'bold',fontSize:'medium', textAlign:'center',display:'flex',flexDirection:'row',alignItems:'center',justifyContent:'center'}}>
+                        Κάνε κλικ εδώ
+                        <Icon as={ArrowRightLineIcon} style={{ width:"1.5em", height:'2em'}}/>
+                    </Content>
                 </Content>
             </Panel>
         </FlexboxGrid.Item>

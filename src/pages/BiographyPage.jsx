@@ -11,7 +11,7 @@ function BiographyPage() {
             setProfName("Γιώργος Λιάππης")
         }
         if(window.location.pathname === "/biographypageamalia"){
-            setProfName("Αμαλία Τσικρικα")
+            setProfName("Αμαλία Τσικρίκα")
         }
     },[profName])
 
