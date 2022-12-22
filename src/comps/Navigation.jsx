@@ -25,7 +25,7 @@ const CustomNavbar = ({ onSelect, activeKey, homeRef, exerciseRef, biographyRef,
   
   return (
     <div>
-      {matches && (<Navbar {...props} style={{backgroundColor:'green',alignItems:'right',position:'fixed', width:'100%', zIndex:'2'}}>
+      {matches && (<Navbar {...props} style={{backgroundColor:'#14532d',alignItems:'right',position:'fixed', width:'100%', zIndex:'2',boxShadow: "-20px 5px 50px black"}}>
         <FlexboxGrid justify='space-between'>
           <FlexboxGrid.Item>
             <Navbar.Brand href="/#homepage" style={{color:'black', marginLeft:'-10px'}} onClick={() => {handleScroll(homeRef.current);}}> 
@@ -38,16 +38,16 @@ const CustomNavbar = ({ onSelect, activeKey, homeRef, exerciseRef, biographyRef,
           </FlexboxGrid.Item>
           <FlexboxGrid.Item>
             <Nav onSelect={onSelect} activeKey={activeKey} style={{fontFamily:'Brush Script MT'}} justified>
-              <Nav.Item href="/#exercise" onClick={() => {handleScroll(exerciseRef.current);}} eventKey="1" style={{color:'black'}}>Ασκήσεις</Nav.Item>
+              <Nav.Item href="/#info" onClick={() => {handleScroll(homeRef.current);}} eventKey="4" style={{color:'black'}}>Πληροφορίες</Nav.Item>
               <Nav.Item href="/#biography" onClick={() => {handleScroll(biographyRef.current);}} eventKey="2" style={{color:'black'}}>Βιογραφικά</Nav.Item>
+              <Nav.Item href="/#exercise" onClick={() => {handleScroll(exerciseRef.current);}} eventKey="1" style={{color:'black'}}>Ασκήσεις</Nav.Item>
               <Nav.Item href="/#communication" onClick={() => {handleScroll(commRef.current);}} eventKey="3" style={{color:'black'}}>Επικοινωνία</Nav.Item>
-              <Nav.Item href="/#info" onClick={() => {handleScroll(infoRef.current);}} eventKey="4" style={{color:'black'}}>Πληροφορίες</Nav.Item>
             </Nav>
           </FlexboxGrid.Item>
         </FlexboxGrid>
       </Navbar>)}
       {!matches && 
-      (<Navbar {...props} style={{backgroundColor:'green',alignItems:'right',position:'fixed', width:'100%', zIndex:'2'}}>
+      (<Navbar {...props} style={{backgroundColor:'#14532d',alignItems:'right',position:'fixed', width:'100%', zIndex:'2'}}>
         <FlexboxGrid justify='space-between'>
             <FlexboxGrid.Item>
               <Navbar.Brand href="/#homepage" style={{fontFamily:'sans-serif',color:'black', marginLeft:'-10px'}} onClick={() => {handleScroll(homeRef.current);}}> 
@@ -61,7 +61,7 @@ const CustomNavbar = ({ onSelect, activeKey, homeRef, exerciseRef, biographyRef,
 
             <FlexboxGrid.Item style={{paddingTop:'2%'}}>
               <ButtonToolbar>
-                <Button onClick={() => setOpen(true)} style={{backgroundColor:'green', color:'black'}}>
+                <Button onClick={() => setOpen(true)} style={{backgroundColor:'#14532d', color:'black'}}>
                 <Icon as={MenuIcon} size='md'/>
                 </Button>
               </ButtonToolbar>
@@ -71,10 +71,10 @@ const CustomNavbar = ({ onSelect, activeKey, homeRef, exerciseRef, biographyRef,
                 </Drawer.Header>
                 <Drawer.Body style={{width:'100%'}}>
                   <Nav onSelect={onSelect} activeKey={activeKey} style={{ display:'flex', flexDirection:'column',width:'100%'}}>
-                    <Nav.Item href="/#exercise" onClick={() => {handleScroll(exerciseRef.current);}} eventKey="1" style={{color:'black'}}>Ασκήσεις</Nav.Item>
+                    <Nav.Item href="/#info" onClick={() => {handleScroll(homeRef.current);}} eventKey="4" style={{color:'black'}}>Πληροφορίες</Nav.Item>
                     <Nav.Item href="/#biography" onClick={() => {handleScroll(biographyRef.current);}} eventKey="2" style={{color:'black'}}>Βιογραφικά</Nav.Item>
+                    <Nav.Item href="/#exercise" onClick={() => {handleScroll(exerciseRef.current);}} eventKey="1" style={{color:'black'}}>Ασκήσεις</Nav.Item>
                     <Nav.Item href="/#communication" onClick={() => {handleScroll(commRef.current);}} eventKey="3" style={{color:'black'}}>Επικοινωνία</Nav.Item>
-                    <Nav.Item href="/#info" onClick={() => {handleScroll(infoRef.current);}} eventKey="4" style={{color:'black'}}>Πληροφορίες</Nav.Item>
                   </Nav>
                 </Drawer.Body>
               </Drawer>
