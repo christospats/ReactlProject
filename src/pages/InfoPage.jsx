@@ -35,7 +35,7 @@ function InfoPage({schData}) {
                     padding:'2em',
                     backgroundColor:"#dcfce7",fontSize:'large', color:'black',}}>
                 <h3 style={{textAlign:'center'}}>{schData.title}</h3>
-                <Content style={{overflow:'scroll',height:'712px', textAlign:'justify'}}>
+                <Content style={{overflow:'scroll',height:'28em', textAlign:'justify'}}>
                     {schData.content}
                 </Content>     
             </div>
