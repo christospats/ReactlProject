@@ -22,7 +22,7 @@ function BioData({profData}) {
             <Panel shaded bodyFill style={{backgroundColor:'#dcfce7',
                                             display: 'inline-block',
                                             borderRadius:"5px",
-                                            boxShadow: "15px 10px 50px #001a00",
+                                            boxShadow: "15px 5px 20px #001a00",
                                             color:'black'}}>
                 <img src={profData.picUrl} width="250" height="250" />
                 <Panel style={{textAlign:'center'}}>

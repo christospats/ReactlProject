@@ -28,7 +28,7 @@ function Biography({ biographyRef}) {
             )}
             {!matches && (
                 <div ref={biographyRef}>
-                    <FlexboxGrid justify='space-around' style={{background: "linear-gradient(to bottom right, #166534 20%,#22c55e)",
+                    <FlexboxGrid justify='space-around' style={{background: "linear-gradient(to bottom, #166534 20%,#22c55e)",
                     padding:'2em'}}>
                         {profData.map((profData) => (
                             <BioData profData={profData} key={profData.name} />

@@ -1,6 +1,7 @@
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
 import {Map, GoogleApiWrapper, Marker, InfoWindow} from 'google-maps-react';
 import {Container, Content,Header} from 'rsuite'
+import ComHeader from "../assets/ComHeader";
 
 const containerStyle = {
   height:'50%',
@@ -12,7 +13,8 @@ class Communication extends Component {
     activeMarker: {},
     selectedPlace: {},
   };
- 
+
+  
   onMarkerClick = (props, marker, e) => {
     this.setState({
       selectedPlace: props,
@@ -35,45 +37,36 @@ class Communication extends Component {
       })
     }
   };
- 
+  
   render(){
+
     return (
           <Container ref={this.props.commRef}>
-            <Header style={{background: "linear-gradient(to top right, #166534 17%, #22c55e)",  paddingBottom: "15px",display: "flex", justifyContent: "center", color:'#171717',fontWeight:'bold', fontSize:'large', fontFamily:'Times New Roman'}}>
-              <div style={{textAlign: "center"}}>
-                <p>Email: liappistsikrika@gmail.com / Τηλέφωνο επικοινωνίας: <a href="tel:PHONE_NUM" style={{color:"#312e81"}}> 2421 400810 </a> / <a href="https://www.facebook.com/profile.php?id=100008279084746" style={{color:"#312e81"}}> Το Facebook μας!</a></p>
-              </div>
-            </Header>
-            <Content>
-              <Map
-                containerStyle={containerStyle}
-                google = {this.props.google}
-                zoom = {20}
-                style = {{width: "100%", boxShadow: "10px 5px 30px black",}}
-                initialCenter = {
-                  {
-                    lat: 39.362320,
-                    lng: 22.947170
-                  }
-                  
+            <ComHeader />
+          <Content>
+            <Map
+              containerStyle={containerStyle}
+              google = {this.props.google}
+              zoom = {20}
+              style = {{width: "100%", boxShadow: "10px 5px 30px black",}}
+              initialCenter = {
+                {
+                  lat: 39.362320,
+                  lng: 22.947170
                 }
-                onClick={this.onMapClicked}
-                
-                >
-                <Marker position = {{lat: 39.362320, lng: 22.947170}} onClick={this.onMarkerClick} />   
-                <InfoWindow
-                  marker={this.state.activeMarker}
-                  visible={this.state.showingInfoWindow}>
-                    <div style={{fontWeight:'bold'}}>
-                      28η Οκτωβρίου 86, ΒΟΛΟΣ, Βόλος [Δήμος], Μαγνησία, 38221
-                    </div>
-                </InfoWindow>
-              </Map>
-
-            </Content>
-
-            
-        </Container> 
+              }
+            onClick={this.onMapClicked}>
+            <Marker position = {{lat: 39.362320, lng: 22.947170}} onClick={this.onMarkerClick} />   
+            <InfoWindow
+              marker={this.state.activeMarker}
+              visible={this.state.showingInfoWindow}>
+              <div style={{fontWeight:'bold'}}>
+                28η Οκτωβρίου 86, ΒΟΛΟΣ, Βόλος [Δήμος], Μαγνησία, 38221
+              </div>
+            </InfoWindow>
+          </Map>
+        </Content>  
+      </Container>
     );
   }  
      
