@@ -46,18 +46,20 @@ function HomePage({homeRef}, {infoRef}) {
             )}
             {!matches&&smallScreen&&(
                 <FlexboxGrid>
-                <Container style={{marginTop:'56px',width:'100%',height:'95vh',display:'flex', flexDirection:'row'}}>
-                    <div style={{width:'40%',height:'500px'}}>
-                        <Info infoRef={homeRef}/>
+                <div style={{marginTop:'56px',width:'100%',height:'100%',display:'flex', flexDirection:'row'}}>
+                    <div style={{width:'40%', height:'100%'}}>
+                        <div style={{height:'28.56em', overflow:'scroll'}}>
+                            <Info infoRef={homeRef}/>
+                        </div>
                     </div>
-                    <Carousel autoplay shape="bar" className="custom-slider" style={{width:"60%", height:"100%"}}>
+                    <Carousel autoplay shape="bar" className="custom-slider" style={{width:"60%"}}>
                         <img src={liappis1} alt="Classrooms" />
                         <img src={liappis2} alt="Classrooms" />
                         <img src={liappis3} alt="Classrooms" />
                         <img src={liappis4} alt="Classrooms" />
                         <img src={liappis5} alt="Classrooms" />
                     </Carousel>
-                </Container>
+                </div>
             </FlexboxGrid>
             )}
             {!smallScreen&&!matches&&(
