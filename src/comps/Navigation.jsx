@@ -40,7 +40,7 @@ const CustomNavbar = ({ onSelect, activeKey, homeRef, exerciseRef, biographyRef,
             <Nav onSelect={onSelect} activeKey={activeKey} style={{fontFamily:'Times New Roman',fontWeight:'bold'}} justified>
               <Nav.Item href="/#info" onClick={() => {handleScroll(homeRef.current);}} eventKey="4" style={{color:'black'}}>Πληροφορίες</Nav.Item>
               <Nav.Item href="/#biography" onClick={() => {handleScroll(biographyRef.current);}} eventKey="2" style={{color:'black'}}>Βιογραφικά</Nav.Item>
-              <Nav.Item href="/#exercise" onClick={() => {handleScroll(exerciseRef.current);}} eventKey="1" style={{color:'black'}}>Ασκήσεις</Nav.Item>
+              <Nav.Item href="/#exercise" onClick={() => {handleScroll(exerciseRef.current);}} eventKey="1" style={{color:'black'}}>Υλικό</Nav.Item>
               <Nav.Item href="/#communication" onClick={() => {handleScroll(commRef.current);}} eventKey="3" style={{color:'black'}}>Επικοινωνία</Nav.Item>
             </Nav>
           </FlexboxGrid.Item>
@@ -73,7 +73,7 @@ const CustomNavbar = ({ onSelect, activeKey, homeRef, exerciseRef, biographyRef,
                   <Nav onSelect={onSelect} activeKey={activeKey} style={{ display:'flex', flexDirection:'column',width:'100%'}}>
                     <Nav.Item href="/#info" onClick={() => {handleScroll(homeRef.current);}} eventKey="4" style={{color:'black'}}>Πληροφορίες</Nav.Item>
                     <Nav.Item href="/#biography" onClick={() => {handleScroll(biographyRef.current);}} eventKey="2" style={{color:'black'}}>Βιογραφικά</Nav.Item>
-                    <Nav.Item href="/#exercise" onClick={() => {handleScroll(exerciseRef.current);}} eventKey="1" style={{color:'black'}}>Ασκήσεις</Nav.Item>
+                    <Nav.Item href="/#exercise" onClick={() => {handleScroll(exerciseRef.current);}} eventKey="1" style={{color:'black'}}>Υλικό</Nav.Item>
                     <Nav.Item href="/#communication" onClick={() => {handleScroll(commRef.current);}} eventKey="3" style={{color:'black'}}>Επικοινωνία</Nav.Item>
                   </Nav>
                 </Drawer.Body>
