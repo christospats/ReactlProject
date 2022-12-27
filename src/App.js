@@ -16,20 +16,19 @@ function App() {
 
   const homeRef = useRef(null); 
   const infoRef = useRef(null);
-  const exerciseRef = useRef(null); 
   const biographyRef = useRef(null);
   const commRef = useRef(null);
 
   return(
     <div>
-      <Navigation homeRef={homeRef} exerciseRef={exerciseRef} biographyRef={biographyRef} commRef={commRef} infoRef={infoRef}/>
+      <Navigation homeRef={homeRef} biographyRef={biographyRef} commRef={commRef} infoRef={infoRef}/>
       <Routes>
         <Route path="/" element={<>
           <HomePage homeRef={homeRef}/>
-          {/*<Exercise exerciseRef={exerciseRef}/>*/}
           <Biography biographyRef={biographyRef}/>
           <Communication commRef={commRef}/>
         </>}/>
+        <Route path="/material" element={<Exercise/>}/>
         <Route path="/biographypageliappis" element={<BiographyPage/>} />
         <Route path="/biographypageamalia" element={<BiographyPage/>} />
       </Routes>

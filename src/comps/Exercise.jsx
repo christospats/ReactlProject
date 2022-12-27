@@ -1,9 +1,29 @@
-import React from 'react';
-function Exercise({exerciseRef}) {
+import { Container, Content } from 'rsuite';
+import useFetch from '../hooks/useFetch';
+
+
+function Exercise() {
+
+    const {loading, error, data} = useFetch('http://localhost:1337/api/materials')
+
+    if (loading) return <p>Loading please wait...</p>
+    if (error) return <p>Error T^T</p>
+
     return (
-        <div ref={exerciseRef}>
-            <h1>Ασκήσεις</h1>
-        </div>
+        <Container>
+            <div  style={{marginTop:'56px'}}>
+                {data.map(review => (
+                    <div key={review.id}>
+                        <br/>
+                        <h3 style={{textAlign:'center'}}>{review.attributes.Header}</h3>
+                        <br/>
+                        <Content style={{textAlign:'justify'}}>{review.attributes.Content}</Content>
+                        <br/>
+                        <Content style={{textAlign:'right'}}>{review.attributes.date}</Content>
+                    </div>
+                ))}
+            </div>
+        </Container>
      );
 }
 
