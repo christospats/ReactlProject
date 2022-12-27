@@ -4,7 +4,7 @@ import useFetch from '../hooks/useFetch';
 
 function Exercise() {
 
-    const {loading, error, data} = useFetch('http://localhost:1337/api/materials')
+    const {loading, error, data} = useFetch('https://strapi-gh2w.onrender.com/api/materials')
 
     if (loading) return <p>Loading please wait...</p>
     if (error) return <p>Error T^T</p>
