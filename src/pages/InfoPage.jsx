@@ -6,7 +6,7 @@ function InfoPage({schData}) {
     
     const [smallScreen,setSmallScreen]= useState(window.matchMedia("(min-width:1084px)").matches)
     
-    const [mediumScreen, setmediumScreen] = useState(window.matchMedia("(min-width:1770px)").matches)
+    const [mediumScreen, setmediumScreen] = useState(window.matchMedia("(min-width:1883px)").matches)
 
     useEffect(() => {
         window.matchMedia("(min-width: 1475px)").addEventListener('change', e => setMatches(e.matches));
@@ -17,7 +17,7 @@ function InfoPage({schData}) {
     })
 
     useEffect(() => {
-        window.matchMedia("(min-width:1770px)").addEventListener('change', e => setmediumScreen(e.matches));
+        window.matchMedia("(min-width:1883px)").addEventListener('change', e => setmediumScreen(e.matches));
     })
 
     return ( 
