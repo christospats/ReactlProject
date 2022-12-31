@@ -29,8 +29,8 @@ function BioInfoPage({correctProf}) {
             )}
             {!matches && (<div>
                             <Container style={{height:'100vh',fontFamily:'Times New Roman'}}>
-                                <Content style={{ display:'flex',alignItems:'center',flexDirection:'row', gap:'10px',backgroundColor:"#166534",marginTop:'56px',color:'black'}}>
-                                <img src={correctProf.picUrl} alt={correctProf.name} style={{borderRadius:'100px', height:'8em', width:'8em', marginTop:'15px'}}/>
+                                <Content style={{ display:'flex',alignItems:'center',justifyContent:'center',flexDirection:'row', gap:'10px',backgroundColor:"#166534",marginTop:'56px',color:'black'}}>
+                                    <img src={correctProf.picUrl} alt={correctProf.name} style={{borderRadius:'100px', height:'8em', width:'8em', marginTop:'15px'}}/>
                                     <Content>
                                         Τηλέφωνο: 6944719951<br/>Κοινωνικά δίκτυα: <a href="https://www.facebook.com/profile.php?id=100008279084746" style={{color:'#312e81'}}>facebook</a>
                                     </Content>
