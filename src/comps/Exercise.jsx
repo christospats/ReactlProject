@@ -24,7 +24,7 @@ function Exercise() {
         <div>
             {mediumScreen && (
                 <Container>
-                    <div  style={{marginTop:'56px',background: "linear-gradient(to bottom, #166534,#16a34a)",display:'flex', flexDirection:'column', textAlign:'center', alignItems:'center',gap:'30px'}}>
+                    <div  style={{marginTop:'56px',background: "linear-gradient(to bottom, #166534,#16a34a)",display:'flex', flexDirection:'column', textAlign:'center', alignItems:'center',gap:'30px', color:'black'}}>
                         {data.map(review => (
                             <div key={review.id} style={{backgroundColor:'#dcfce7',padding:'2%', width:'50%', borderRadius:'15px',boxShadow: "10px 5px 30px black"}}>
                                 <br/>
@@ -40,7 +40,7 @@ function Exercise() {
             )}
             {!mediumScreen && smallScreen &&(
                 <Container>
-                    <div  style={{marginTop:'56px',background: "linear-gradient(to bottom, #166534,#16a34a)",display:'flex', flexDirection:'column', textAlign:'center', alignItems:'center',gap:'30px'}}>
+                    <div  style={{marginTop:'56px',background: "linear-gradient(to bottom, #166534,#16a34a)",display:'flex', flexDirection:'column', textAlign:'center', alignItems:'center',gap:'30px', color:'black'}}>
                         {data.map(review => (
                             <div key={review.id} style={{backgroundColor:'#dcfce7',padding:'2%', width:'70%', borderRadius:'15px',boxShadow: "10px 5px 30px black"}}>
                                 <br/>
@@ -56,7 +56,7 @@ function Exercise() {
             )}
             {!mediumScreen&&!smallScreen&&(
                 <Container>
-                    <div  style={{marginTop:'56px',background: "linear-gradient(to bottom, #166534,#16a34a)",display:'flex', flexDirection:'column', textAlign:'center', alignItems:'center',gap:'25px'}}>
+                    <div  style={{marginTop:'56px',background: "linear-gradient(to bottom, #166534,#16a34a)",display:'flex', flexDirection:'column', textAlign:'center', alignItems:'center',gap:'25px',color:'black'}}>
                         {data.map(review => (
                             <div key={review.id} style={{backgroundColor:'#dcfce7',padding:'2%', borderRadius:'15px',boxShadow: "10px 5px 30px black"}}>
                                 <br/>
