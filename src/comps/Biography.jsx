@@ -13,8 +13,8 @@ function Biography({ biographyRef}) {
     return (
         <div>
             {matches && (
-                <div ref={biographyRef} style= {{ background: "linear-gradient(to bottom right, #166534 20%,#22c55e)",paddingBlock: "6%", paddingLeft:'10%', paddingRight:'10%'}}>
-                    <div style={{fontSize:'xx-large', fontFamily:'fantasy',marginTop:'-56px', textShadow:'#27272a 1px 8px 10px'}}>
+                <div ref={biographyRef} style= {{ background: "linear-gradient(to bottom right, #166534 20%,#16a34a)",paddingBlock: "6%", paddingLeft:'10%', paddingRight:'10%'}}>
+                    <div style={{fontSize:'xx-large', marginTop:'-56px', textShadow:'#27272a 1px 8px 10px'}}>
                         <Content style={{color:'black', display:'flex', alignItems:'center',justifyContent:'center',flexDirection:'column'}}>Φροντιστήριο Θεωρητικών Επιστημών/ Βιογραφικά</Content>
                     </div>
                     <br/>
@@ -28,7 +28,7 @@ function Biography({ biographyRef}) {
             )}
             {!matches && (
                 <div ref={biographyRef}>
-                    <FlexboxGrid justify='space-around' style={{background: "linear-gradient(to bottom, #166534 20%,#22c55e)",
+                    <FlexboxGrid justify='space-around' style={{background: "linear-gradient(to bottom, #166534 20%,#16a34a)",
                     padding:'2em', display: 'flex', flexWrap: 'wrap', gap: "30px"}}>
                         {profData.map((profData) => (
                             <BioData profData={profData} key={profData.name} />
