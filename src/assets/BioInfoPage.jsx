@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from 'react';
-import { Header,Container,Sidebar, Content } from 'rsuite';
+import { Container,Sidebar, Content } from 'rsuite';
 
 function BioInfoPage({correctProf}) {
     const [matches, setMatches] = useState(window.matchMedia("(min-width:602px)").matches)

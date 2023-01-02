@@ -8,8 +8,6 @@ import Biography from './comps/Biography';
 import React, {useRef} from "react";
 import { Route,Routes } from 'react-router-dom';
 import BiographyPage from './pages/BiographyPage';
-import profData from './assets/profData';
-import Info from './comps/Inforamtion';
 
 
 function App() {

@@ -1,9 +1,7 @@
-import React, {useEffect,useState} from 'react';
 import { Content, FlexboxGrid, Panel } from 'rsuite';
 import ArrowRightLineIcon from '@rsuite/icons/ArrowRightLine';
 import { Icon } from '@rsuite/icons';
 import { useNavigate } from "react-router-dom";
-import paperText from '../photos/paperText.png';
 
 function BioData({profData}) {
     let navigate = useNavigate();
@@ -24,7 +22,7 @@ function BioData({profData}) {
                                             borderRadius:"5px",
                                             boxShadow: "15px 5px 20px #001a00",
                                             color:'black'}}>
-                <img src={profData.picUrl} width="250" height="250" />
+                <img src={profData.picUrl} width="250" height="250" alt='professor'/>
                 <Panel style={{textAlign:'center'}}>
                     <p style={{fontSize:'large', fontWeight:'bold'}}>{profData.name}</p>
                     <p>

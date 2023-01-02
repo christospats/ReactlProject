@@ -6,6 +6,7 @@ import liappis2 from '../photos/liappis2.jpg'
 import liappis3 from '../photos/liappis3.jpg'
 import liappis4 from '../photos/liappis4.jpg'
 import liappis5 from '../photos/liappis5.jpg'
+import plirofories from '../photos/plirofories.jpg'
 
 
 function HomePage({homeRef}, {infoRef}) {
@@ -35,11 +36,12 @@ function HomePage({homeRef}, {infoRef}) {
                             <Info infoRef={homeRef}/>
                         </div>
                         <Carousel autoplay shape="bar" className="custom-slider" style={{width:"60%", height:"100%",borderBottomLeftRadius:'15px'}}>
-                            <img src={liappis1} alt="Classrooms" />
-                            <img src={liappis2} alt="Classrooms" />
-                            <img src={liappis3} alt="Classrooms" />
-                            <img src={liappis4} alt="Classrooms" />
-                            <img src={liappis5} alt="Classrooms" />
+                            <img src={plirofories} alt="plhrofories"/>
+                            <img src={liappis1} alt="Classroom1" />
+                            <img src={liappis2} alt="Classroom2" />
+                            <img src={liappis3} alt="Classroom3" />
+                            <img src={liappis4} alt="Classroom4" />
+                            <img src={liappis5} alt="Classroom5" />
                         </Carousel>
                     </Container>
                 </FlexboxGrid>
@@ -53,28 +55,30 @@ function HomePage({homeRef}, {infoRef}) {
                         </div>
                     </div>
                     <Carousel autoplay shape="bar" className="custom-slider" style={{width:"60%"}}>
-                        <img src={liappis1} alt="Classrooms" />
-                        <img src={liappis2} alt="Classrooms" />
-                        <img src={liappis3} alt="Classrooms" />
-                        <img src={liappis4} alt="Classrooms" />
-                        <img src={liappis5} alt="Classrooms" />
+                            <img src={plirofories} alt="plhrofories"/>
+                            <img src={liappis1} alt="Classroom1" />
+                            <img src={liappis2} alt="Classroom2" />
+                            <img src={liappis3} alt="Classroom3" />
+                            <img src={liappis4} alt="Classroom4" />
+                            <img src={liappis5} alt="Classroom5" />
                     </Carousel>
                 </div>
             </FlexboxGrid>
             )}
             {!smallScreen&&!matches&&(
-                <div>
-                <Carousel autoplay shape="bar" className="custom-slider" style={{width:"100%", height:"100%"}}>
-                        <img src={liappis1} alt="Classrooms" />
-                        <img src={liappis2} alt="Classrooms" />
-                        <img src={liappis3} alt="Classrooms" />
-                        <img src={liappis4} alt="Classrooms" />
-                        <img src={liappis5} alt="Classrooms" />
+                <FlexboxGrid>
+                <Carousel autoplay shape="bar" className="custom-slider" style={{width:"100%", height:"100%",marginTop:'56px'}}>
+                            <img src={plirofories} alt="plhrofories"/>
+                            <img src={liappis1} alt="Classroom1" />
+                            <img src={liappis2} alt="Classroom2" />
+                            <img src={liappis3} alt="Classroom3" />
+                            <img src={liappis4} alt="Classroom4" />
+                            <img src={liappis5} alt="Classroom5" />
                     </Carousel>
                     <div>
                         <Info infoRef={homeRef}/>
                     </div>
-                </div>
+                </FlexboxGrid>
             )}
         </div>
      );

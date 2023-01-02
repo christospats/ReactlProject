@@ -1,6 +1,6 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { Component } from "react";
 import {Map, GoogleApiWrapper, Marker, InfoWindow} from 'google-maps-react';
-import {Container, Content,Header} from 'rsuite'
+import {Container, Content} from 'rsuite'
 import ComHeader from "../assets/ComHeader";
 
 const containerStyle = {

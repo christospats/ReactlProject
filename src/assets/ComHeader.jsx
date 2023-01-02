@@ -12,14 +12,14 @@ function ComHeader() {
     return (  
         <div>
             {smallScreen && (
-                <Header style={{background: "linear-gradient(to top right, #166534 17%, #22c55e)",  paddingBottom: "15px",display: "flex", justifyContent: "center", color:'#171717',fontWeight:'bold', fontSize:'large', fontFamily:'Times New Roman'}}>
+                <Header style={{background: "linear-gradient(to top right, #166534 17%, #16a34a)",  paddingBottom: "15px",display: "flex", justifyContent: "center", color:'#171717',fontWeight:'bold', fontSize:'large', fontFamily:'Times New Roman'}}>
                     <div style={{textAlign: "center"}}>
                     <p>Email: liappistsikrika@gmail.com / Τηλέφωνο επικοινωνίας: <a href="tel:PHONE_NUM" style={{color:"#312e81"}}> 2421 400810 </a> / <a href="https://www.facebook.com/profile.php?id=100008279084746" style={{color:"#312e81"}}> Το Facebook μας!</a></p>
                     </div>
                 </Header>
             )}
             {!smallScreen && (
-                <Header style={{backgroundColor:'#22c55e',  paddingBottom: "15px",display: "flex", justifyContent: "center", color:'#171717',fontWeight:'bold', fontSize:'large', fontFamily:'Times New Roman'}}>
+                <Header style={{backgroundColor:'#16a34a',  paddingBottom: "15px",display: "flex", justifyContent: "center", color:'#171717',fontWeight:'bold', fontSize:'large', fontFamily:'Times New Roman'}}>
                     <div style={{textAlign: "center"}}>
                     <p>Email: liappistsikrika@gmail.com / Τηλέφωνο επικοινωνίας: <a href="tel:PHONE_NUM" style={{color:"#312e81"}}> 2421 400810 </a> / <a href="https://www.facebook.com/profile.php?id=100008279084746" style={{color:"#312e81"}}> Το Facebook μας!</a></p>
                 </div>
