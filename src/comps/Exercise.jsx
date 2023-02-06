@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 
 function Exercise() {
 
-    const {loading, error, data} = useFetch('https://strapi-gh2w.onrender.com/api/materials')
+    const {loading, error, data} = useFetch('https://strapi-fqua.onrender.com/api/articles')
     const [mediumScreen, setMediumScreen] = useState(window.matchMedia("(min-width:1193px)").matches)
     const [smallScreen, setSmallScreen] = useState(window.matchMedia("(min-width:601px)").matches)
 
